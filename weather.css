@@ -1,0 +1,62 @@
+:root{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+body{
+}
+.display{
+    display: none;
+    width: 20rem;
+    height: 20rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+};
+.display>div{
+    background: rgb(213, 212, 212);
+}
+.day{
+    width: 90px;
+}
+.temps, .conditions, .light, .wind, .hour, .day{
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    background: rgb(213, 212, 212);
+    margin: .25rem;
+    padding: .1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.light{
+    background: skyblue;
+    color: white;
+}
+#temp, #icon, #direction, #timeTil{
+    font-size:2.5rem;
+    width: 80px;
+    height: 80px;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conditions{
+}
+.wind{
+}
+#weatherIcon{
+    width: 5rem;
+    height: 5rem;
+}
+.hourly,.daily{
+    display:flex;
+    flex-direction: row;
+}
+#hiLo{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
