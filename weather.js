@@ -20,7 +20,7 @@ async function hitWeatherAPI(){
     let locale = document.getElementById("where").value;
     const key = 'e99402f7bff435eb835d69fa748eee0d';
     let units = getUnits();
-    let path = `http://api.openweathermap.org/data/2.5/weather?q=${locale}&APPID=${key}&units=${units.type}`;
+    let path = `https://api.openweathermap.org/data/2.5/weather?q=${locale}&APPID=${key}&units=${units.type}`;
     const response = await fetch(path, {mode: 'cors'});
     const weatherObject = await response.json();
     return(weatherObject);
