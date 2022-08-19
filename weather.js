@@ -33,7 +33,7 @@ async function fiveDayAPI(){
 
     let units = getUnits();
     const key = 'e99402f7bff435eb835d69fa748eee0d';
-    let path = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units.type}`;
+    let path = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units.type}`;
     const response = await fetch(path, {mode: 'cors'});
     const fiveDayObject = await response.json();
     console.log(fiveDayObject);
